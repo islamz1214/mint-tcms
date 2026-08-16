@@ -1,0 +1,236 @@
+/* Mint TCMS Component Styles - Tailwind v4 Compatible */
+
+/* Cards and Containers */
+.mint-card {
+  border-radius: 0.75rem;
+  border: 1px solid rgb(153, 250, 232);
+  background-color: white;
+  padding: 1.25rem;
+}
+
+.dark .mint-card {
+  border-color: rgb(6, 95, 70);
+  background-color: rgb(24, 24, 27);
+}
+
+.mint-card-hover {
+  border-radius: 0.75rem;
+  border: 1px solid rgb(153, 250, 232);
+  background-color: white;
+  padding: 1.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.mint-card-hover:hover {
+  border-color: rgb(102, 247, 221);
+  background-color: rgb(240, 253, 249);
+}
+
+.dark .mint-card-hover {
+  border-color: rgb(6, 95, 70);
+  background-color: rgb(24, 24, 27);
+}
+
+.dark .mint-card-hover:hover {
+  border-color: rgb(5, 122, 102);
+  background-color: rgb(39, 39, 42);
+}
+
+.mint-card-interactive {
+  border-radius: 0.75rem;
+  border: 1px solid rgb(153, 250, 232);
+  background-color: white;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mint-card-interactive:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  border-color: rgb(51, 245, 209);
+}
+
+/* Buttons */
+.mint-btn-primary {
+  border-radius: 0.5rem;
+  background-color: rgb(5, 150, 105);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.mint-btn-primary:hover {
+  background-color: rgb(4, 120, 87);
+}
+
+.mint-btn-primary:disabled {
+  opacity: 0.5;
+}
+
+.dark .mint-btn-primary {
+  background-color: rgb(5, 150, 105);
+}
+
+.dark .mint-btn-primary:hover {
+  background-color: rgb(16, 217, 129);
+}
+
+/* Input Fields */
+.mint-input {
+  border-radius: 0.5rem;
+  border: 1px solid rgb(209, 213, 219);
+  background-color: white;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.mint-input:focus {
+  border-color: rgb(16, 217, 129);
+  outline: none;
+  ring: 1px rgb(16, 217, 129);
+}
+
+.dark .mint-input {
+  border-color: rgb(63, 63, 70);
+  background-color: rgb(39, 39, 42);
+  color: rgb(244, 244, 245);
+}
+
+.dark .mint-input:focus {
+  border-color: rgb(16, 217, 129);
+  ring: 1px rgb(16, 217, 129);
+}
+
+/* Links */
+.mint-link {
+  color: rgb(5, 150, 105);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  text-decoration-offset: 0.25rem;
+}
+
+.mint-link:hover {
+  color: rgb(4, 120, 87);
+  text-decoration-line: underline;
+}
+
+.dark .mint-link {
+  color: rgb(16, 217, 129);
+}
+
+.dark .mint-link:hover {
+  color: rgb(51, 245, 209);
+}
+
+/* Badges */
+.mint-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: rgb(204, 253, 243);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(6, 78, 59);
+}
+
+.dark .mint-badge {
+  background-color: rgb(6, 78, 59);
+  color: rgb(204, 253, 243);
+}
+
+/* Text */
+.mint-text-muted {
+  font-size: 0.875rem;
+  color: rgb(113, 113, 122);
+}
+
+.dark .mint-text-muted {
+  color: rgb(161, 161, 170);
+}
+
+.mint-text-highlight {
+  font-weight: 500;
+  color: rgb(5, 150, 105);
+}
+
+.dark .mint-text-highlight {
+  color: rgb(16, 217, 129);
+}
+
+/* Headings */
+.mint-heading-1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: rgb(24, 24, 27);
+}
+
+.dark .mint-heading-1 {
+  color: rgb(250, 250, 250);
+}
+
+.mint-heading-2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: rgb(24, 24, 27);
+}
+
+.dark .mint-heading-2 {
+  color: rgb(250, 250, 250);
+}
+
+.mint-heading-3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: rgb(24, 24, 27);
+}
+
+.dark .mint-heading-3 {
+  color: rgb(250, 250, 250);
+}
+
+/* Divider */
+.mint-divider {
+  border-top: 1px solid rgb(204, 253, 243);
+}
+
+.dark .mint-divider {
+  border-top-color: rgb(6, 95, 70);
+}
+
+/* Status Colors */
+.mint-status-passed {
+  color: rgb(22, 163, 74);
+}
+
+.dark .mint-status-passed {
+  color: rgb(74, 222, 128);
+}
+
+.mint-status-failed {
+  color: rgb(220, 38, 38);
+}
+
+.dark .mint-status-failed {
+  color: rgb(248, 113, 113);
+}
+
+.mint-status-pending {
+  color: rgb(202, 138, 4);
+}
+
+.dark .mint-status-pending {
+  color: rgb(250, 204, 21);
+}

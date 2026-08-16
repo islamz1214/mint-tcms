@@ -1,0 +1,4 @@
+title,description,steps,expectedResult,status,priority,suite
+User can log in with valid credentials,Verify successful login,"1. Navigate to /login\n2. Enter valid email and password\n3. Click Sign in",User is redirected to dashboard,active,high,Authentication
+User sees validation for missing password,Verify login form validation,"1. Navigate to /login\n2. Enter a valid email\n3. Leave password blank\n4. Click Sign in",Validation message is shown,draft,medium,Authentication
+User can open sponsorship details,Verify project navigation,"1. Open the sponsor a child page\n2. Click a child profile card",Child details page is displayed,draft,medium,Sponsor a child

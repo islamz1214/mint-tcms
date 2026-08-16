@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint TCMS - Open Source Test Management</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --mint: #10b981; --dark: #1f2937; --gray: #6b7280; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--dark); background: white; }
+        header { background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--mint); text-decoration: none; }
+        nav a { color: var(--dark); text-decoration: none; margin: 0 1rem; transition: color 0.3s; }
+        nav a:hover { color: var(--mint); }
+        .hero { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; color: var(--mint); }
+        .hero p { font-size: 1.2rem; color: var(--gray); margin-bottom: 2rem; }
+        .buttons { display: flex; gap: 1rem; justify-content: center; margin-bottom: 3rem; }
+        .btn { padding: 0.75rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s; border: none; cursor: pointer; }
+        .btn-primary { background: var(--mint); color: white; }
+        .btn-primary:hover { background: #059669; }
+        .btn-secondary { border: 2px solid var(--mint); color: var(--mint); background: transparent; }
+        .btn-secondary:hover { background: #f0fdf4; }
+        .features { background: #f9fafb; padding: 4rem 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; }
+        .card { background: white; padding: 2rem; border-radius: 8px; border: 1px solid #e5e7eb; }
+        .card h3 { margin: 1rem 0 0.5rem 0; }
+        .card p { color: var(--gray); font-size: 0.95rem; }
+        .icon { font-size: 2rem; }
+        .stats { background: linear-gradient(135deg, var(--mint), #059669); color: white; padding: 3rem 2rem; text-align: center; }
+        .stats-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; }
+        .stat-item h3 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .getting-started { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        .code { background: #1f2937; color: #10b981; padding: 1.5rem; border-radius: 8px; font-family: monospace; font-size: 0.9rem; margin: 2rem 0; }
+        .cta { background: #f0fdf4; border: 2px solid var(--mint); padding: 3rem 2rem; border-radius: 8px; text-align: center; margin: 2rem 0; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .buttons { flex-direction: column; } .btn { width: 100%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">🌿 Mint TCMS</a>
+            <div><a href="#features">Features</a> <a href="#started">Get Started</a> <a href="https://github.com">GitHub</a></div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>The Modern Open-Source Standard<br>for Test Case Management</h1>
+        <p>AI-powered test management system built for QA engineers who demand simplicity and intelligence</p>
+        <div class="buttons">
+            <a href="https://github.com" class="btn btn-primary">⭐ Star on GitHub</a>
+            <a href="#started" class="btn btn-secondary">📖 Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Powerful Features</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Test Case Management</h3>
+                <p>Create, organize, and manage test cases with rich text editing</p>
+            </div>
+            <div class="card">
+                <div class="icon">▶️</div>
+                <h3>Test Execution</h3>
+                <p>Run tests, track results, and manage execution in real-time</p>
+            </div>
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Comprehensive Reporting</h3>
+                <p>Get detailed insights with dashboards and reports</p>
+            </div>
+            <div class="card">
+                <div class="icon">🤖</div>
+                <h3>AI-Powered Test Generation</h3>
+                <p>Automatically generate comprehensive test cases from user stories and requirements using AI</p>
+            </div>
+            <div class="card">
+                <div class="icon">🌙</div>
+                <h3>Modern UI</h3>
+                <p>Beautiful interface with dark mode support</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(135deg, #f0fdf4, #e0f7f0); padding: 4rem 2rem; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #10b981;">
+                🤖 AI-Powered Intelligence Built-In
+            </h2>
+            <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Generate test cases in seconds instead of hours. Mint TCMS uses AI to understand your requirements and create comprehensive, intelligent test scenarios automatically.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <h3 style="color: #10b981; margin-bottom: 0.5rem;">Smart Test Generation</h3>
+                    <p style="color: #6b7280; font-size: 0.9rem;">Generate test cases from user stories and requirements automatically</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <h3 style="color: #10b981; margin-bottom: 0.5rem;">Intelligent Suggestions</h3>
+                    <p style="color: #6b7280; font-size: 0.9rem;">Get AI-powered suggestions for edge cases and test scenarios</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <h3 style="color: #10b981; margin-bottom: 0.5rem;">Save Hours</h3>
+                    <p style="color: #6b7280; font-size: 0.9rem;">Reduce test case creation time from hours to minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section style="background: linear-gradient(135deg, var(--mint), #059669); color: white; padding: 3rem 2rem; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 2rem;">
+            <div><div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">100%</div><div style="opacity: 0.9; font-size: 0.9rem;">Open Source</div></div>
+            <div><div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">MIT</div><div style="opacity: 0.9; font-size: 0.9rem;">License</div></div>
+            <div><div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Free</div><div style="opacity: 0.9; font-size: 0.9rem;">Forever</div></div>
+            <div><div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">v0.1.0</div><div style="opacity: 0.9; font-size: 0.9rem;">Latest</div></div>
+        </div>
+    </section>
+
+    <section style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; text-align: center;">Get Started in Minutes</h2>
+        <div style="background: #1f2937; color: #10b981; padding: 2rem; border-radius: 8px; font-family: monospace; font-size: 0.95rem; line-height: 1.6; overflow-x: auto;">
+# Clone and start<br>
+git clone https://github.com/yourusername/mint-tcms<br>
+cd mint-tcms<br>
+<br>
+npm install<br>
+npm run stack:up<br>
+<br>
+# Open in browser<br>
+http://localhost:3001<br>
+# Create your account to get started
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://github.com" style="background: var(--mint); color: white; padding: 0.75rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block;">View Full Docs</a>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2026 Mint TCMS. Open Source Test Management for QA Engineers.</p>
+        <p style="color: #9ca3af; margin-top: 1rem;">Licensed under MIT | <a href="https://github.com" style="color: #d1d5db;">GitHub</a></p>
+    </footer>
+</body>
+</html>

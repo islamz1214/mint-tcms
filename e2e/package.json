@@ -1,0 +1,31 @@
+{
+  "name": "e2e",
+  "version": "0.0.1",
+  "private": true,
+  "description": "End-to-end tests for Mint TCMS test management app",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:cross-browser": "playwright test --project=firefox --project=webkit --project=mobile-chrome",
+    "test:full": "npm run test:chromium && npm run test:cross-browser",
+    "test:smoke": "playwright test tests/smoke",
+    "test:smoke:chromium": "playwright test tests/smoke --project=chromium",
+    "test:smoke:cross-browser": "playwright test tests/smoke --project=firefox --project=webkit --project=mobile-chrome",
+    "test:smoke:full": "npm run test:smoke:chromium && npm run test:smoke:cross-browser",
+    "test:features": "playwright test tests/features",
+    "test:features:chromium": "playwright test tests/features --project=chromium",
+    "test:features:cross-browser": "playwright test tests/features --project=firefox --project=webkit --project=mobile-chrome",
+    "test:features:full": "npm run test:features:chromium && npm run test:features:cross-browser",
+    "test:a11y": "playwright test tests/a11y",
+    "test:a11y:chromium": "playwright test tests/a11y --project=chromium",
+    "test:a11y:cross-browser": "playwright test tests/a11y --project=firefox --project=webkit --project=mobile-chrome",
+    "test:a11y:full": "npm run test:a11y:chromium && npm run test:a11y:cross-browser",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.50.0"
+  }
+}
